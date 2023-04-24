@@ -1,4 +1,3 @@
-
 export const getEntries = () => {
   return fetch("http://localhost:8088/entries")
     .then(res => res.json())
@@ -39,4 +38,3 @@ export const updateEntry = entry => {
     body: JSON.stringify(entry)
   })
 };
-
